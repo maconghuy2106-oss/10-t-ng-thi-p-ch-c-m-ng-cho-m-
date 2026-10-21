@@ -4,7 +4,7 @@ import giftboxImg from "../../assets/images/giftbox.png";
 
 export default function IntroStage({ onOpen }: { onOpen: () => void }) {
   return (
-    <section className="relative z-10 mx-auto flex w-full max-w-xl flex-col items-center justify-center px-4 py-6 text-center">
+    <section className="relative z-10 mx-auto flex w-full flex-col items-center justify-center px-4 py-4 text-center">
       <motion.p
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function IntroStage({ onOpen }: { onOpen: () => void }) {
         initial={{ opacity: 0, scale: 0.75, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ delay: 0.45, duration: 0.9, type: "spring", bounce: 0.35 }}
-        className="relative mt-3"
+        className="relative mt-3 flex justify-center w-full"
       >
         <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(255,214,228,0.9),rgba(255,214,228,0))] glow-pulse" />
         <img
