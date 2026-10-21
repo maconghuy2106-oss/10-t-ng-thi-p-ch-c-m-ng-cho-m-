@@ -48,8 +48,8 @@ export default function App() {
 
   return (
     <div className="min-h-[100dvh] w-full bg-[#ffe4ec] flex items-center justify-center p-2 sm:p-4 md:p-8 overflow-x-hidden">
-      {/* Khung thẻ bo tròn căn giữa giống hệt mẫu AI trên máy tính, và tự động full màn hình khi xem trên điện thoại */}
-      <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl min-h-[85vh] sm:min-h-[90vh] bg-[#fff8fa] rounded-[2rem] shadow-[0_20px_60px_-15px_rgba(160,84,106,0.3)] overflow-hidden border border-pink-200 flex flex-col justify-between">
+      {/* Đã thêm items-center ở đây để khung thiệp bo tròn nằm chính giữa màn hình máy tính */}
+      <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl min-h-[85vh] sm:min-h-[90vh] bg-[#fff8fa] rounded-[2rem] shadow-[0_20px_60px_-15px_rgba(160,84,106,0.3)] overflow-hidden border border-pink-200 flex flex-col items-center justify-between">
         
         <Backdrop />
         <Fireworks ref={fwRef} />
@@ -68,7 +68,6 @@ export default function App() {
           </span>
         </button>
 
-        {/* Đã thêm items-center để căn giữa hoàn toàn */}
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center w-full">
           <AnimatePresence mode="wait">
             <motion.div
