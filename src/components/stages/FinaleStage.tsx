@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import heartImg from "../../assets/images/heart-flowers.png";
 import type { FireworksHandle } from "../Fireworks";

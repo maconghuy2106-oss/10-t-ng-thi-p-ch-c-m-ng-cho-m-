@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import bouquetImg from "../../assets/images/bouquet.png";
 import giftboxImg from "../../assets/images/giftbox.png";
