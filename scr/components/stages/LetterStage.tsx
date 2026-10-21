@@ -4,9 +4,9 @@ import { playSparkle } from "../../lib/music";
 
 // 1. Nhập các bức ảnh gia đình từ thư mục assets
 // (Bạn nhớ chuẩn bị các file ảnh family1.jpg, family2.jpg... trong src/assets/images/)
-import family1 from "../../assets/images/family1.jpg";
-import family2 from "../../assets/images/family2.jpg";
-import family3 from "../../assets/images/family3.jpg";
+import family1 from "../../assets/images/family1.png";
+import family2 from "../../assets/images/family2.png";
+import family3 from "../../assets/images/family3.png";
 
 // Danh sách các bức ảnh kèm chú thích
 const FAMILY_PHOTOS = [
