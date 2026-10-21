@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Backdrop from "./components/Backdrop";
 import Fireworks, { type FireworksHandle } from "./components/Fireworks";
