@@ -180,7 +180,6 @@ body {
   border-radius: 9999px;
   border: 2px solid rgba(239, 135, 169, 0.75);
   animation: ring-ripple 2.4s ease-out infinite;
-  /* decorative ripple must never swallow taps on the button underneath */
   pointer-events: none;
 }
 .ring-ripple::after {
@@ -242,9 +241,11 @@ body {
   transform: translateY(-46%);
 }
 
-/* ---------- Image blending ---------- */
+/* ---------- Image blending & sizing fix ---------- */
 .watercolor {
-  mix-blend-mode: multiply;
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* subtle tap feedback for all buttons */
