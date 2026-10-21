@@ -68,7 +68,8 @@ export default function App() {
           </span>
         </button>
 
-        <div className="relative z-10 flex-1 flex flex-col justify-center">
+        {/* Đã thêm items-center để căn giữa hoàn toàn */}
+        <div className="relative z-10 flex-1 flex flex-col items-center justify-center w-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={stage}
@@ -76,7 +77,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -22 }}
               transition={{ duration: 0.55, ease: "easeOut" }}
-              className="w-full"
+              className="w-full flex flex-col items-center justify-center"
             >
               {stage === "intro" && <IntroStage onOpen={handleOpenGift} />}
               {stage === "bloom" && (
